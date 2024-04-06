@@ -2,6 +2,9 @@
 
 /* PAGES */
 @import "../../pages/main/main.css";
+@import "../../pages/subscribe/subscribe.css";
+@import "../../pages/history/history.css";
+@import "../../pages/help/help.css";
 
 /* COMPONENTS */
 @import "../../components/popup/popup.css";
@@ -65,11 +68,32 @@ button {
   margin: 32px 0;
 }
 
+main > .box:first-child {
+  margin-top: 0;
+}
+
+main > .box:last-child {
+  margin-bottom: 0;
+}
+
 .iosBox {
   background-color: #fff;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  gap: unset;
+}
+
+.iosBox--partBorder .iosBox__item {
+  border-bottom: none;
+}
+
+.iosBox--partBorder .iosBox__item-content {
+  border-bottom: 0.5px solid #BCBCC1;
+}
+
+.iosBox--partBorder .iosBox__item:last-of-type .iosBox__item-content {
+  border-bottom: none;
 }
 
 .iosBox__item {
@@ -105,6 +129,21 @@ button {
 
 .iosBox__item-content-text {
   font-size: 17px;
+  color: initial;
+  display: flex;
+  flex-direction: column;
+}
+
+.iosBox__item-content-text-sub {
+  font-size: 12px;
+  font-weight: 400;
+  color: #8A8A8E;
+}
+
+.main__reviewBox-item-content-rightText {
+  font-size: 17px;
+  font-weight: 400;
+  color: #0A84FF;
 }
 
 /* SLIDERS */
@@ -159,5 +198,16 @@ button {
 
 .button--Blue {
   background-color: #0A84FF;
+  color: white;
+}
+
+.button--Text {
+  color: #0A84FF;
+  background-color: transparent;
+  padding: 0;
+}
+
+.button--Red {
+  background-color: #FF453A;
   color: white;
 }

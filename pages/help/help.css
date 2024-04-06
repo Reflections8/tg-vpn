@@ -1,0 +1,21 @@
+/* SLIDER */
+.help__sliderBox-slider-item {
+  border-radius: 10px;
+  background: #93BCFB;
+  height: 208px;
+  padding: 16px;
+  color: white;
+  overflow: hidden;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 32px !important;
+}
+
+.help__sliderBox-slider-item-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.help__sliderBox-slider-item {
+  background: linear-gradient(to right, #3F88F7, #93BCFB);
+}

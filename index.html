@@ -130,6 +130,179 @@
 						</div>
 				</div>
 
+				<!-- popup checkout -->
+				<div class="popup__checkout popup--Hidden" data-popup="checkout">
+
+						<!-- header -->
+						<div class="popup__checkout-header">
+								<div class="popup__checkout-header-content">
+										<img src="components/popup/checkout/img/icon.svg"
+												 alt="icon"
+												 class="popup__checkout-header-content-icon">
+										<div class="popup__checkout-header-content-title">
+												Метод оплаты
+										</div>
+								</div>
+
+								<img src="assets/images/close-circle.svg"
+										 alt="close"
+										 class="popup__checkout-header-closeIcon"
+										 data-popup-close>
+						</div>
+
+						<!-- iosBox -->
+						<a href="https://www.google.com/" class="iosBox iosBox--partBorder popup__checkout-Box">
+
+								<div class="iosBox__item main__reviewBox-item">
+										<img src="components/popup/checkout/img/bitcoin.svg"
+												 alt="heart"
+												 class="iosBox__item-icon main__reviewBox-item-icon">
+
+										<div class="iosBox__item-content main__reviewBox-item-content">
+												<div class="iosBox__item-content-text main__reviewBox-item-content-text">
+														Криптовалюта
+												</div>
+												<img src="assets/images/arrow-right.svg"
+														 alt="arrow-right"
+														 class="main__reviewBox-item-content-arrow">
+										</div>
+								</div>
+
+								<div class="iosBox__item iosBox__item--OnlyText main__reviewBox-item">
+										Telegram Wallet, BTC, USDT, TON.
+								</div>
+						</a>
+
+						<!-- iosBox -->
+						<a href="https://www.google.com/" class="iosBox iosBox--partBorder popup__checkout-Box">
+
+								<div class="iosBox__item main__reviewBox-item">
+										<img src="components/popup/checkout/img/ruble.svg"
+												 alt="heart"
+												 class="iosBox__item-icon main__reviewBox-item-icon">
+
+										<div class="iosBox__item-content main__reviewBox-item-content">
+												<div class="iosBox__item-content-text main__reviewBox-item-content-text">
+														Рубли
+												</div>
+												<img src="assets/images/arrow-right.svg"
+														 alt="arrow-right"
+														 class="main__reviewBox-item-content-arrow">
+										</div>
+								</div>
+
+								<div class="iosBox__item iosBox__item--OnlyText main__reviewBox-item">
+										Карты российских банков, Карта МИР, СБП, Sber Pay, МИР Pay, ЮМани.
+								</div>
+						</a>
+
+				</div>
+
+				<!-- popup create new device -->
+				<div class="popup__createDevice popup--Hidden" data-popup="create-device">
+
+						<h2 class="popup__createDevice-header">
+								Создание подключения
+						</h2>
+
+						<div class="popup__createDevice-pills">
+								<div class="popup__createDevice-pills-title">
+										Тип устройства
+								</div>
+
+								<div class="tabs_wrapper popup__createDevice-pills-main">
+
+										<input type="radio" name="tabs" id="tab_1" checked />
+										<label class="tab" for="tab_1">
+												<img src="components/popup/createDevice/img/iphone.svg"
+														 alt="icon"
+														 class="material-icons">
+												<span class="title">iPhone</span>
+										</label>
+
+										<input type="radio" name="tabs" id="tab_2" />
+										<label class="tab" for="tab_2">
+												<img src="components/popup/createDevice/img/android.svg"
+														 alt="icon"
+														 class="material-icons">
+												<span class="title">Android</span>
+										</label>
+
+										<input type="radio" name="tabs" id="tab_3" />
+										<label class="tab" for="tab_3">
+												<img src="components/popup/createDevice/img/windows.svg"
+														 alt="icon"
+														 class="material-icons">
+												<span class="title">Windows</span>
+										</label>
+
+										<span class="shape"></span>
+								</div>
+						</div>
+
+						<div class="popup__createDevice-deviceName">
+								<div class="popup__createDevice-deviceName-title">
+										Название профиля
+								</div>
+
+								<input type="text"
+											 class="popup__createDevice-deviceName-input"
+											 placeholder="iPhone Саша">
+						</div>
+
+						<!-- iosBox -->
+						<div class="iosBox popup__createDevice-adBlock">
+
+								<!-- item -->
+								<div class="iosBox__item">
+										<div class="iosBox__item-content">
+												<div class="iosBox__item-content-text">
+														Блокировка рекламы
+												</div>
+
+												<label class="toggle">
+														<input class="toggle-checkbox" type="checkbox">
+														<div class="toggle-switch"></div>
+												</label>
+										</div>
+								</div>
+
+								<!-- item -->
+								<div class="iosBox__item iosBox__item--OnlyText">
+										вапролар вал прва лроп ылварпфоыврап валыдпрыопврлвыра ол олфырвпаыв алапвр п рвыарылвд раы рап
+								</div>
+						</div>
+
+						<!-- footer -->
+						<div class="popup__createDevice-footer">
+								<div class="popup__createDevice-footer-text">
+										система автоматически подбирает ближайший к Вам сервер, гарантируя не только лучшую скорость, но и стабильное подключение.
+								</div>
+
+								<button class="button button--Blue popup__createDevice-footer-btn">
+										<span class="popup__createDevice-footer-btn-text">
+											Создать подключение
+										</span>
+
+										<div class="loading bar popup__createDevice-footer-btn-loader" style="display: none">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+										</div>
+								</button>
+
+								<button class="button button--Text popup__createDevice-footer-btn" data-popup-close>
+										Не надо
+								</button>
+						</div>
+
+				</div>
+
 		</div>
 
 		<!-- 1) main page -->
@@ -299,7 +472,8 @@
 												 alt="corner"
 												 class="main__devicesBox-grid-CreateItemBox-corner main__devicesBox-grid-CreateItemBox-corner--4">
 
-										<div class="main__devicesBox-grid-CreateItemBox-text">
+										<div class="main__devicesBox-grid-CreateItemBox-text"
+												 data-popup-btn="create-device">
 												Создать новое подключение
 										</div>
 								</div>
@@ -308,7 +482,7 @@
 
 				<!-- Оставить отзыв -->
 				<!-- iosBox -->
-				<a href="https://www.google.com/" class="iosBox main__reviewBox">
+				<a href="https://www.google.com/" class="box iosBox main__reviewBox">
 
 						<!-- item -->
 						<div class="iosBox__item main__reviewBox-item">
@@ -335,18 +509,461 @@
 		</main>
 
 		<!-- 2) subscribe page -->
-		<main class="page pageHidden page--Main" data-nav-page="subscribe">
-				SUBSCRIBE
+		<main class="page pageHidden page--Subscribe" data-nav-page="subscribe">
+
+				<!-- Слайдер -->
+				<div class="box subscribe__sliderBox">
+						<h2 class="box__title subscribe__sliderBox-title">
+								Оформить подписку
+						</h2>
+
+						<!-- slider -->
+						<div class="subscribe__sliderBox-slider">
+
+										<!-- item -->
+										<div class="subscribe__sliderBox-slider-item">
+												<div class="subscribe__sliderBox-slider-item-title">
+														Купи давай сабку
+												</div>
+												<div class="subscribe__sliderBox-slider-item-text">
+														Ваш отзыв не останется без внимания, его увидит команда
+														OS VPN и прислушается
+												</div>
+										</div>
+
+								<!-- item -->
+								<div class="subscribe__sliderBox-slider-item">
+										<div class="subscribe__sliderBox-slider-item-title">
+												2 Купи давай сабку
+										</div>
+										<div class="subscribe__sliderBox-slider-item-text">
+												Ваш отзыв не останется без внимания, его увидит команда
+												OS VPN и прислушается
+										</div>
+								</div>
+
+								<!-- item -->
+								<div class="subscribe__sliderBox-slider-item">
+										<div class="subscribe__sliderBox-slider-item-title">
+												3 Купи давай сабку
+										</div>
+										<div class="subscribe__sliderBox-slider-item-text">
+												Ваш отзыв не останется без внимания, его увидит команда
+												OS VPN и прислушается
+										</div>
+								</div>
+
+								</div>
+				</div>
+
+				<!-- Промокод -->
+				<div class="box subscribe__promoBox">
+						<input type="text"
+									 class="subscribe__promoBox-input"
+									 placeholder="Ввести промик">
+
+						<div class="subscribe__promoBox-subtext subscribe__promoBox-subtext--Hidden">
+								Промокод активирован
+						</div>
+				</div>
+
+				<!-- Подписки -->
+				<div class="box subscribes__list">
+
+						<!-- Пробная -->
+						<div class="subscribes__list-item">
+								<!-- checkmark -->
+								<img src="pages/subscribe/img/checkmark-gray.svg"
+										 alt="checkmark"
+										 class="subscribes__list-item-checkMark">
+
+								<div class="subscribes__list-item-header">
+										<img src="pages/subscribe/img/gift.svg"
+												 alt="icon"
+												 class="subscribes__list-item-header-icon">
+										<div class="subscribes__list-item-header-text">
+												Пробная подписка на месяц
+										</div>
+								</div>
+
+								<div class="subscribes__list-item-text">
+										149 рублей
+								</div>
+
+								<div class="subscribes__list-item-footer">
+										<button class="button button--Blue subscribes__list-item-btn">
+												Без скрытых платежей
+										</button>
+								</div>
+
+						</div>
+
+						<!-- Месячная -->
+						<div class="subscribes__list-item subscribes__list-item--Checked">
+								<!-- checkmark -->
+								<img src="pages/subscribe/img/checkmark.svg"
+										 alt="checkmark"
+										 class="subscribes__list-item-checkMark">
+
+								<div class="subscribes__list-item-header">
+										<img src="pages/subscribe/img/gift.svg"
+												 alt="icon"
+												 class="subscribes__list-item-header-icon">
+										<div class="subscribes__list-item-header-text">
+												Месячная подписка
+										</div>
+								</div>
+
+								<div class="subscribes__list-item-text">
+										149 рублей
+								</div>
+						</div>
+
+						<!-- Трехмесячная -->
+						<div class="subscribes__list-item">
+								<!-- checkmark -->
+								<img src="pages/subscribe/img/checkmark-gray.svg"
+										 alt="checkmark"
+										 class="subscribes__list-item-checkMark">
+
+								<div class="subscribes__list-item-header">
+										<div class="subscribes__list-item-header-text">
+												Трехмесячная подписка
+										</div>
+								</div>
+
+								<div class="subscribes__list-item-text">
+										<span>133₽ в месяц</span> / 399 рублей
+								</div>
+
+								<div class="subscribes__list-item-footer">
+										<button class="button button--Blue subscribes__list-item-btn">
+												Выгода 10%
+										</button>
+								</div>
+
+						</div>
+
+						<!-- Полугодовая -->
+						<div class="subscribes__list-item">
+								<!-- checkmark -->
+								<img src="pages/subscribe/img/checkmark-gray.svg"
+										 alt="checkmark"
+										 class="subscribes__list-item-checkMark">
+
+								<div class="subscribes__list-item-header">
+										<div class="subscribes__list-item-header-text">
+												Полугодовая подписка <span>+1 месяц</span>
+										</div>
+								</div>
+
+								<div class="subscribes__list-item-text">
+										<span>99₽ в месяц</span> / 699 рублей
+								</div>
+
+								<div class="subscribes__list-item-footer">
+										<button class="button button--Blue subscribes__list-item-btn">
+												Выгода 30%
+										</button>
+
+										<button class="button button--Red subscribes__list-item-btn">
+												1 Месяц в подарок
+										</button>
+								</div>
+
+						</div>
+
+						<!-- Годовая -->
+						<div class="subscribes__list-item">
+								<!-- checkmark -->
+								<img src="pages/subscribe/img/checkmark-gray.svg"
+										 alt="checkmark"
+										 class="subscribes__list-item-checkMark">
+
+								<div class="subscribes__list-item-header">
+										<img src="pages/subscribe/img/fire.svg"
+												 alt="icon"
+												 class="subscribes__list-item-header-icon">
+
+										<div class="subscribes__list-item-header-text">
+												Годовая подписка <span>+3 месяца</span>
+										</div>
+								</div>
+
+								<div class="subscribes__list-item-text">
+										<span>66₽ в месяц</span> / 999 рублей
+								</div>
+
+								<div class="subscribes__list-item-footer">
+										<button class="button button--Blue subscribes__list-item-btn">
+												Выгода 50%
+										</button>
+
+										<button class="button button--Red subscribes__list-item-btn">
+												3 Месяца в подарок
+										</button>
+								</div>
+
+						</div>
+
+
+				</div>
+
 		</main>
 
 		<!-- 3) history page -->
-		<main class="page pageHidden page--Main" data-nav-page="history">
-				HISTORY
+		<main class="page pageHidden page--History" data-nav-page="history">
+
+				<!-- vpnButton -->
+				<div class="vpnButton main__topBtn" data-popup-btn="vpn">
+						<div class="vpnButton__header">
+								<img src="assets/images/tg.svg"
+										 alt="tg"
+										 class="vpnButton__header-icon">
+
+								<div class="vpnButton__header-text">
+										VPN
+								</div>
+						</div>
+						<div class="vpnButton__text">
+								Оформите бесплатную пробную подписку на 1 мес.
+						</div>
+				</div>
+
+				<!-- История операций -->
+				<div class="box history__box">
+						<h2 class="box__title history__box-title">
+								История операций
+						</h2>
+
+						<div class="history__box-list">
+
+								<!-- iosBox -->
+								<div class="iosBox iosBox--partBorder">
+
+										<!-- item -->
+										<a href="#" class="iosBox__item main__reviewBox-item">
+												<img src="pages/history/img/1.svg"
+														 alt="heart"
+														 class="iosBox__item-icon main__reviewBox-item-icon">
+
+												<div class="iosBox__item-content main__reviewBox-item-content">
+														<div class="iosBox__item-content-text main__reviewBox-item-content-text">
+																<div class="iosBox__item-content-text-main">
+																		06.02.2024
+																</div>
+																<div class="iosBox__item-content-text-sub">
+																		Ежедневное списание
+																</div>
+														</div>
+														<div class="main__reviewBox-item-content-rightText">
+																100 ₽
+														</div>
+												</div>
+										</a>
+
+										<!-- item -->
+										<a href="#" class="iosBox__item main__reviewBox-item">
+												<img src="pages/history/img/2.svg"
+														 alt="heart"
+														 class="iosBox__item-icon main__reviewBox-item-icon">
+
+												<div class="iosBox__item-content main__reviewBox-item-content">
+														<div class="iosBox__item-content-text main__reviewBox-item-content-text">
+																<div class="iosBox__item-content-text-main">
+																		05.02.2024
+																</div>
+																<div class="iosBox__item-content-text-sub">
+																		Бонусное пополнение
+																</div>
+														</div>
+														<div class="main__reviewBox-item-content-rightText">
+																100 ₽
+														</div>
+												</div>
+										</a>
+
+										<!-- item -->
+										<a href="#" class="iosBox__item main__reviewBox-item">
+												<img src="pages/history/img/3.svg"
+														 alt="heart"
+														 class="iosBox__item-icon main__reviewBox-item-icon">
+
+												<div class="iosBox__item-content main__reviewBox-item-content">
+														<div class="iosBox__item-content-text main__reviewBox-item-content-text">
+																<div class="iosBox__item-content-text-main">
+																		02.02.2024
+																</div>
+																<div class="iosBox__item-content-text-sub">
+																		Осталось 5 ГБ
+																</div>
+														</div>
+														<img src="pages/history/img/info.svg"
+																 alt="info"
+																 class="main__reviewBox-item-content-rightIcon">
+												</div>
+										</a>
+
+										<!-- item -->
+										<a href="#" class="iosBox__item main__reviewBox-item">
+												<img src="pages/history/img/4.svg"
+														 alt="heart"
+														 class="iosBox__item-icon main__reviewBox-item-icon">
+
+												<div class="iosBox__item-content main__reviewBox-item-content">
+														<div class="iosBox__item-content-text main__reviewBox-item-content-text">
+																<div class="iosBox__item-content-text-main">
+																		28.02.2024
+																</div>
+																<div class="iosBox__item-content-text-sub">
+																		Подключение тарифа
+																</div>
+														</div>
+														<img src="pages/history/img/info.svg"
+																 alt="info"
+																 class="main__reviewBox-item-content-rightIcon">
+												</div>
+										</a>
+
+										<!-- item -->
+										<a href="#" class="iosBox__item main__reviewBox-item">
+												<img src="pages/history/img/5.svg"
+														 alt="heart"
+														 class="iosBox__item-icon main__reviewBox-item-icon">
+
+												<div class="iosBox__item-content main__reviewBox-item-content">
+														<div class="iosBox__item-content-text main__reviewBox-item-content-text">
+																<div class="iosBox__item-content-text-main">
+																		22.02.2024
+																</div>
+																<div class="iosBox__item-content-text-sub">
+																		Пополнение счета
+																</div>
+														</div>
+														<div class="main__reviewBox-item-content-rightText">
+																100 ₽
+														</div>
+												</div>
+										</a>
+
+										<!-- item -->
+										<a href="#" class="iosBox__item main__reviewBox-item">
+												<img src="pages/history/img/6.svg"
+														 alt="heart"
+														 class="iosBox__item-icon main__reviewBox-item-icon">
+
+												<div class="iosBox__item-content main__reviewBox-item-content">
+														<div class="iosBox__item-content-text main__reviewBox-item-content-text">
+																<div class="iosBox__item-content-text-main">
+																		21.02.2024
+																</div>
+																<div class="iosBox__item-content-text-sub">
+																		Создание счета
+																</div>
+														</div>
+														<img src="pages/history/img/info.svg"
+																 alt="info"
+																 class="main__reviewBox-item-content-rightIcon">
+												</div>
+										</a>
+								</div>
+
+						</div>
+				</div>
 		</main>
 
 		<!-- 4) help page -->
-		<main class="page pageHidden page--Main" data-nav-page="help">
-				HELP
+		<main class="page pageHidden page--Help" data-nav-page="help">
+
+				<!-- Слайдер -->
+				<div class="box help__sliderBox">
+						<h2 class="box__title help__sliderBox-h2">
+								Помощь и поддержка
+						</h2>
+
+						<!-- slider -->
+						<div class="help__sliderBox-slider">
+
+								<!-- item -->
+								<div class="help__sliderBox-slider-item" data-help-slide="first">
+										1
+								</div>
+
+								<!-- item -->
+								<div class="help__sliderBox-slider-item" data-help-slide="second">
+										2
+								</div>
+
+								<!-- item -->
+								<div class="help__sliderBox-slider-item" data-help-slide="third">
+										3
+								</div>
+
+						</div>
+				</div>
+
+				<!-- iosBox -->
+				<a href="#" class="iosBox">
+
+						<div class="iosBox__item main__reviewBox-item">
+								<img src="pages/help/img/1.svg"
+										 alt="heart"
+										 class="iosBox__item-icon main__reviewBox-item-icon">
+
+								<div class="iosBox__item-content main__reviewBox-item-content">
+										<div class="iosBox__item-content-text main__reviewBox-item-content-text">
+												Поддержка
+										</div>
+										<img src="assets/images/arrow-right.svg"
+												 alt="arrow-right"
+												 class="main__reviewBox-item-content-arrow">
+								</div>
+						</div>
+				</a>
+
+				<div class="box">
+
+						<h2 class="box__title">
+								Пожертвования
+						</h2>
+
+						<!-- iosBox -->
+						<div class="iosBox iosBox--partBorder">
+								<a href="#" class="iosBox__item main__reviewBox-item">
+										<img src="pages/help/img/2.svg"
+												 alt="heart"
+												 class="iosBox__item-icon main__reviewBox-item-icon">
+
+										<div class="iosBox__item-content main__reviewBox-item-content">
+												<div class="iosBox__item-content-text main__reviewBox-item-content-text">
+														Donation Alerts
+												</div>
+												<img src="assets/images/arrow-right.svg"
+														 alt="arrow-right"
+														 class="main__reviewBox-item-content-arrow">
+										</div>
+								</a>
+
+								<a href="#" class="iosBox__item main__reviewBox-item">
+										<img src="pages/help/img/3.svg"
+												 alt="heart"
+												 class="iosBox__item-icon main__reviewBox-item-icon">
+
+										<div class="iosBox__item-content main__reviewBox-item-content">
+												<div class="iosBox__item-content-text main__reviewBox-item-content-text">
+														Криптовалюты
+												</div>
+												<img src="assets/images/arrow-right.svg"
+														 alt="arrow-right"
+														 class="main__reviewBox-item-content-arrow">
+										</div>
+								</a>
+								<a />
+								<div class="iosBox__item iosBox__item--OnlyText">
+										Пожертвования позволяют продолжать совершенствовать сервис и делать его только лучше
+								</div>
+						</div>
+				</div>
 		</main>
 
 </div>
@@ -355,6 +972,13 @@
 <footer class="footerWrapper">
 		<div class="footerContainer">
 				<div class="footer">
+
+						<!-- purchase button -->
+						<button class="button button--Blue footer__purchaseBtn"
+										data-popup-btn="checkout"
+										style="display: none">
+								Приобрести
+						</button>
 
 						<!-- navigation -->
 						<nav class="footer__nav">
@@ -426,9 +1050,12 @@
 
 <!-- Pages -->
 <script src="pages/main/main.js"></script>
+<script src="pages/subscribe/subscribe.js"></script>
+<script src="pages/help/help.js"></script>
 
 <!-- Component scripts -->
 <script src="components/footer/footer.js"></script>
+<script src="components/popup/createDevice/createDevice.js"></script>
 
 
 </body>

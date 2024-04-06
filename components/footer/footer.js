@@ -8,6 +8,19 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
+  function handleFooterAdditionalElements(matchedRoute) {
+    const purchaseBtn = document.querySelector('.footer__purchaseBtn')
+
+    switch (matchedRoute) {
+      case 'subscribe':
+        purchaseBtn.style.display = 'flex'
+        break
+      default:
+        purchaseBtn.style.display = 'none'
+        break
+    }
+  }
+
   function handleRouteActiveClasses(matchedRoute) {
     navButtons.forEach(btn => {
       btn.classList.remove('footer__nav-link--Active')
@@ -17,6 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.classList.add('footer__nav-link--Active')
       }
     })
+
+    handleFooterAdditionalElements(matchedRoute)
+
   }
 
   navButtons.forEach(btn => {

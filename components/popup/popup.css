@@ -1,5 +1,7 @@
 @import "./vpn/vpn.css";
+@import "./checkout/checkout.css";
 @import "./simple/simple.css";
+@import "./createDevice/createDevice.css";
 
 .popupWrapper {
   position: fixed;

@@ -1,0 +1,125 @@
+.subscribe__sliderBox-slider-item {
+  height: 96px;
+  background: linear-gradient(to right, #3F88F7, #93BCFB);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex !important;
+  flex-direction: column !important;
+  color: white;
+}
+
+.subscribe__sliderBox-slider-item-title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.subscribe__sliderBox-slider-item-text {
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: auto;
+}
+
+
+.subscribe__promoBox.box {
+  gap: 2px;
+  margin-bottom: 20px;
+}
+
+.subscribe__promoBox-input {
+  border: none;
+  outline: none;
+  background-color: #E3E3E8;
+  padding: 8px 10px;
+  font-size: 17px;
+  font-weight: 400;
+  border-radius: 10px;
+  font-family: 'SF Pro Display', sans-serif;
+}
+
+.subscribe__promoBox-input::placeholder {
+  color: rgba(60, 60, 67, 0.6);
+}
+
+.subscribe__promoBox-subtext {
+  margin-left: 16px;
+  color: #0A84FF;
+  font-size: 11px;
+}
+
+.subscribe__promoBox-subtext--Hidden {
+  display: none;
+}
+
+.subscribes__list.box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.subscribes__list-item {
+  border: 1.5px solid transparent;
+  background-color: #F2F2F7;
+  border-radius: 10px;
+  transition: all .2s ease-in-out;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.subscribes__list-item--Checked {
+  border: 1.5px solid #0A84FF;
+  padding: 10px 16px;
+  box-shadow: none;
+}
+
+.subscribes__list-item-checkMark {
+  position: absolute;
+  max-width: 10px;
+  right: 6px;
+  top: 6px;
+}
+
+.subscribes__list-item-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.subscribes__list-item-header-text {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.subscribes__list-item-header-text span {
+  color: #0A84FF;
+}
+
+.subscribes__list-item-text {
+  font-size: 15px;
+  font-weight: 400;
+  color: #8A8A8E;
+}
+
+.subscribes__list-item-text span {
+  color: black;
+}
+
+.subscribes__list-item-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.button.subscribes__list-item-btn {
+  padding: 5px 10px;
+  font-weight: 400;
+  margin: 0;
+  width: fit-content;
+  font-size: 15px;
+  display: inline-block;
+}
+
