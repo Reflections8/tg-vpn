@@ -23,13 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
   linkBoxes.forEach(linkBox => {
     linkBox.addEventListener('click', e => {
       const textElement = linkBox.querySelector('.main__devicesBox-grid-item-link-text')
-
-      if (e.target.closest('.main__devicesBox-grid-item-link-copyLink')) {
         navigator.clipboard.writeText(textElement.innerText)
           .catch(err => {
            alert(`Не удалось скопировать ссылку, ошибка: ${err}`)
           });
-      }
     })
   })
 
