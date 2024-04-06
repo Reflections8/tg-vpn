@@ -1,6 +1,7 @@
 .footerWrapper {
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   position: fixed;
   bottom: 0;
   max-width: 100vw;
