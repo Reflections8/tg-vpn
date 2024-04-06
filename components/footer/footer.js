@@ -8,11 +8,25 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
+  function handleRouteActiveClasses(matchedRoute) {
+    navButtons.forEach(btn => {
+      btn.classList.remove('footer__nav-link--Active')
+
+      const iteratedRoute = btn.getAttribute('data-nav-button')
+      if (iteratedRoute === matchedRoute) {
+        btn.classList.add('footer__nav-link--Active')
+      }
+    })
+  }
+
   navButtons.forEach(btn => {
     btn.addEventListener('click', e => {
-      const clickedBtn = e.currentTarget.getAttribute('data-nav-button')
+      const matchedRoute = e.currentTarget.getAttribute('data-nav-button')
+
+      handleRouteActiveClasses(matchedRoute)
       hideAllPage()
-      const matchedPage = document.querySelector(`[data-nav-page=${clickedBtn}]`)
+
+      const matchedPage = document.querySelector(`[data-nav-page=${matchedRoute}]`)
       matchedPage.classList.remove('pageHidden')
     })
   })

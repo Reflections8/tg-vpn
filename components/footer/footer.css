@@ -29,3 +29,11 @@
   font-weight: 500;
   font-family: 'SF Pro Display', sans-serif;
 }
+
+.footer__nav-link--Active .footer__nav-link-text {
+  color: #0A84FF;
+}
+
+.footer__nav-link--Active svg path {
+  fill: #0A84FF;
+}

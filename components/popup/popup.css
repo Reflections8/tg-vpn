@@ -1,4 +1,5 @@
 @import "./vpn/vpn.css";
+@import "./simple/simple.css";
 
 .popupWrapper {
   position: fixed;

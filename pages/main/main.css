@@ -190,3 +190,7 @@
   left: 0;
   bottom: 0;
 }
+
+.main__reviewBox {
+  color: unset;
+}

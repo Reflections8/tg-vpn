@@ -1,0 +1,74 @@
+.popup__simple {
+  position: fixed;
+  transition: all .2s ease-in-out;
+  opacity: 1;
+  background: rgba(242, 242, 242, 0.8);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 272px;
+  width: 100%;
+}
+
+.popup__simple.popup--Hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.popup__simple-content {
+  padding: 16px 16px 32px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 8px;
+}
+
+.popup__simple-content-title {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.popup__simple-content-subtitle {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.popup__simple-content-footer {
+  border-top: 0.5px solid #8A8A8E;
+  display: flex;
+  align-items: center;
+}
+
+.popup__simple-content-footer-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 12px 37px;
+  font-size: 17px;
+}
+
+.popup__simple-content-footer-btn:first-of-type {
+  border-right: 0.5px solid #8A8A8E;
+}
+
+.popup__simple-content-footer-btn--Regular {
+  font-weight: 400;
+}
+
+.popup__simple-content-footer-btn--Semibold {
+  font-weight: 600;
+}
+
+.popup__simple-content-footer-btn--Red {
+  color: #FF453A;
+}
+
+.popup__simple-content-footer-btn--Blue {
+  color: #0A84FF;
+}

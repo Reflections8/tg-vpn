@@ -16,8 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* POPUPS */
   const popupWrapper = document.querySelector('.popupWrapper')
+
   const popups = document.querySelectorAll('[data-popup]')
   const popupButtons = document.querySelectorAll('[data-popup-btn]')
+  const popupCloseIcons = document.querySelectorAll('[data-popup-close]')
 
   function closeAllPopups() {
     popupWrapper.classList.add('popupWrapper--Hidden')
@@ -33,5 +35,17 @@ document.addEventListener('DOMContentLoaded', () => {
       matchedPopup.classList.remove('popup--Hidden')
       popupWrapper.classList.remove('popupWrapper--Hidden')
     })
+  })
+
+  /* Close by icon */
+  popupCloseIcons.forEach(closeIcon => {
+    closeIcon.addEventListener('click', closeAllPopups)
+  })
+
+  /* Close by outside click */
+  popupWrapper.addEventListener('click', e => {
+    if (!e.target.closest('[data-popup]')) {
+      closeAllPopups()
+    }
   })
 });
