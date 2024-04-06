@@ -144,6 +144,7 @@
 .toggle {
   cursor: pointer;
   display: inline-block;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .toggle-switch {
   display: inline-block;

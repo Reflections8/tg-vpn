@@ -25,6 +25,7 @@ body {
   background-color: #F2F2F7;
   font-family: 'SF Pro Display', sans-serif;
   position: relative;
+  user-select: none;
 }
 
 a {
@@ -60,6 +61,7 @@ button {
   opacity: 0;
   pointer-events: none;
   height: 0;
+  overflow: hidden;
 }
 
 /* BOX */
@@ -196,6 +198,7 @@ main > .box:last-child {
   border-radius: 10px;
   margin: 0 auto;
   font-family: 'SF Pro Display', sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .button--Blue {
