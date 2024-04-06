@@ -1,0 +1,26 @@
+html {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+/* Paragraphs*/
+p {
+  line-height: 130%;
+}

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+		<!-- Encoding -->
+		<meta charset="UTF-8">
+
+		<!-- Language -->
+		<meta http-equiv="content-language" content="ru"/>
+
+		<!-- Author -->
+		<meta name="author" content="Ruslan Feduleyev">
+
+		<!-- Viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Title/Description -->
+		<title>Meta title</title>
+		<meta name="description" content="Meta description"/>
+
+		<!-- SlickSlider CDN -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<!-- SlickSlider CDN -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<!-- normalize.css -->
+		<link rel="stylesheet" href="assets/css/normalize.css">
+
+		<!-- Global CSS file -->
+		<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+<!-- root -->
+<div class="rootContainer">
+
+		<!-- POPUPS -->
+		<div class="popupWrapper popupWrapper--Hidden">
+
+				<!-- popup vpn -->
+				<div class="popup__vpn popup--Hidden" data-popup="vpn">
+
+						<!-- header -->
+						<div class="popup__vpn-header">
+								<div class="popup__vpn-header-content">
+										<img src="components/popup/vpn/img/icon.svg"
+												 alt="icon"
+												 class="popup__vpn-header-content-icon">
+										<div class="popup__vpn-header-content-title">
+												OS VPN
+										</div>
+								</div>
+
+								<img src="assets/images/close-circle.svg"
+										 alt="close"
+										 class="popup__vpn-header-closeIcon">
+						</div>
+
+						<!-- main -->
+						<div class="popup__vpn-header-main">
+								<div class="popup__vpn-header-main-top">
+										<div class="popup__vpn-header-main-top-title">
+												Бесплатная пробная подписка на 1 мес.
+										</div>
+										<div class="popup__vpn-header-main-top-subtitle">
+												Начиная с сегодняшнего дня
+										</div>
+								</div>
+
+								<div class="popup__vpn-header-main-text">
+										Преимущества и приколы подписки Преимущества и приколы подписки Преимущества и приколы подписки Преимущества и приколы подписки Преимущества и приколы подписки Преимущества и приколы подписки Преимущества и приколы подписки  Преимущества и приколы подписки
+								</div>
+						</div>
+
+						<button class="button button--Blue popup__vpn-header-btn">
+								Подключить подписку
+						</button>
+
+				</div>
+
+		</div>
+
+		<!-- 1) main page -->
+		<main class="page page--Main" data-nav-page="main">
+
+				<!-- vpnButton -->
+				<div class="vpnButton main__topBtn" data-popup-btn="vpn">
+						<div class="vpnButton__header">
+								<img src="assets/images/tg.svg"
+										 alt="tg"
+										 class="vpnButton__header-icon">
+
+								<div class="vpnButton__header-text">
+										VPN
+								</div>
+						</div>
+						<div class="vpnButton__text">
+								Оформите бесплатную пробную подписку на 1 мес.
+						</div>
+				</div>
+
+				<!-- Слайдер -->
+				<div class="box main__sliderBox">
+						<h2 class="box__title main__sliderBox-h2">
+								Главная
+						</h2>
+
+						<!-- slider -->
+						<div class="main__sliderBox-slider">
+
+								<!-- item -->
+								<div class="main__sliderBox-slider-item" data-main-slide="first">
+										1
+								</div>
+
+								<!-- item -->
+								<div class="main__sliderBox-slider-item" data-main-slide="pc-now">
+										<div class="main__sliderBox-slider-item-title">
+												Теперь на ПК
+										</div>
+
+										<div class="main__sliderBox-slider-item-content">
+												Теперь
+										</div>
+								</div>
+
+								<!-- item -->
+								<div class="main__sliderBox-slider-item" data-main-slide="third">
+										3
+								</div>
+
+						</div>
+				</div>
+
+				<!-- Устройства -->
+				<div class="box main__devicesBox">
+						<h2 class="box__title main__devicesBox-title">
+								Устройства
+						</h2>
+
+						<!-- grid -->
+						<div class="main__devicesBox-grid">
+
+								<!-- item -->
+								<div class="main__devicesBox-grid-item" data-device-card-color="blue">
+
+										<!-- item header -->
+										<div class="main__devicesBox-grid-item-header">
+												<img src="pages/main/img/iphone.svg"
+														 alt="iphone"
+														 class="main__devicesBox-grid-item-header-deviceIcon">
+												<div class="main__devicesBox-grid-item-header-title">
+														IPhone Саша
+												</div>
+												<img src="pages/main/img/trash.svg"
+														 alt="trash"
+														 class="main__devicesBox-grid-item-header-deleteIcon">
+										</div>
+
+										<!-- item scale -->
+										<div class="main__devicesBox-grid-item-scale">
+												<div class="main__devicesBox-grid-item-scale-additional"></div>
+												<div class="main__devicesBox-grid-item-scale-main">
+														<div class="main__devicesBox-grid-item-scale-main-text">
+																<span>78,34</span> из <span>100</span> ГБ
+														</div>
+														<!-- absolute bg -->
+														<div class="main__devicesBox-grid-item-scale-main-absoluteBg"
+																 style="width: 78.34%"></div>
+
+												</div>
+										</div>
+
+										<!-- item link -->
+										<div class="main__devicesBox-grid-item-link">
+												<div class="main__devicesBox-grid-item-link-text">
+														vless://hui2389ruwedjskc32r8weio
+												</div>
+												<img src="pages/main/img/copyLink.svg"
+														 alt="copyLink"
+														 class="main__devicesBox-grid-item-link-copyLink">
+										</div>
+
+								</div>
+
+								<!-- item -->
+								<div class="main__devicesBox-grid-item" data-device-card-color="red">
+
+										<!-- item header -->
+										<div class="main__devicesBox-grid-item-header">
+												<img src="pages/main/img/android.svg"
+														 alt="android"
+														 class="main__devicesBox-grid-item-header-deviceIcon">
+												<div class="main__devicesBox-grid-item-header-title">
+														Android Юля
+												</div>
+												<img src="pages/main/img/trash.svg"
+														 alt="trash"
+														 class="main__devicesBox-grid-item-header-deleteIcon">
+										</div>
+
+										<!-- item scale -->
+										<div class="main__devicesBox-grid-item-scale">
+												<div class="main__devicesBox-grid-item-scale-additional"></div>
+												<div class="main__devicesBox-grid-item-scale-main">
+														<div class="main__devicesBox-grid-item-scale-main-text">
+																<span>0,22</span> из <span>1</span> ГБ
+														</div>
+														<!-- absolute bg -->
+														<div class="main__devicesBox-grid-item-scale-main-absoluteBg"
+																 style="width: 22%"></div>
+
+												</div>
+										</div>
+
+										<!-- item link -->
+										<div class="main__devicesBox-grid-item-link">
+												<div class="main__devicesBox-grid-item-link-text">
+														vless://hui2389ruwedjskc32r8weio
+												</div>
+												<img src="pages/main/img/copyLink.svg"
+														 alt="copyLink"
+														 class="main__devicesBox-grid-item-link-copyLink">
+										</div>
+
+								</div>
+
+								<!-- create item -->
+								<div class="main__devicesBox-grid-item main__devicesBox-grid-CreateItemBox">
+										<img src="pages/main/img/corners/1.svg"
+												 alt="corner"
+												 class="main__devicesBox-grid-CreateItemBox-corner main__devicesBox-grid-CreateItemBox-corner--1">
+
+										<img src="pages/main/img/corners/2.svg"
+												 alt="corner"
+												 class="main__devicesBox-grid-CreateItemBox-corner main__devicesBox-grid-CreateItemBox-corner--2">
+
+										<img src="pages/main/img/corners/4.svg"
+												 alt="corner"
+												 class="main__devicesBox-grid-CreateItemBox-corner main__devicesBox-grid-CreateItemBox-corner--3">
+
+										<img src="pages/main/img/corners/3.svg"
+												 alt="corner"
+												 class="main__devicesBox-grid-CreateItemBox-corner main__devicesBox-grid-CreateItemBox-corner--4">
+
+										<div class="main__devicesBox-grid-CreateItemBox-text">
+												Создать новое подключение
+										</div>
+								</div>
+						</div>
+				</div>
+
+				<!-- Оставить отзыв -->
+				<!-- iosBox -->
+				<div class="iosBox main__reviewBox">
+
+						<!-- item -->
+						<div class="iosBox__item main__reviewBox-item">
+								<img src="pages/main/img/heart.svg"
+										 alt="heart"
+										 class="iosBox__item-icon main__reviewBox-item-icon">
+
+								<div class="iosBox__item-content main__reviewBox-item-content">
+										<div class="iosBox__item-content-text main__reviewBox-item-content-text">
+												Оставить отзыв
+										</div>
+										<img src="assets/images/arrow-right.svg"
+												 alt="arrow-right"
+												 class="main__reviewBox-item-content-arrow">
+								</div>
+						</div>
+
+						<!-- item -->
+						<div class="iosBox__item iosBox__item--OnlyText main__reviewBox-item">
+								Отзыв не останется без внимания, его увидит команда
+								OS VPN и прислушается
+						</div>
+				</div>
+		</main>
+
+		<!-- 2) subscribe page -->
+		<main class="page pageHidden page--Main" data-nav-page="subscribe">
+				SUBSCRIBE
+		</main>
+
+		<!-- 3) history page -->
+		<main class="page pageHidden page--Main" data-nav-page="history">
+				HISTORY
+		</main>
+
+		<!-- 4) help page -->
+		<main class="page pageHidden page--Main" data-nav-page="help">
+				HELP
+		</main>
+
+</div>
+
+
+<footer class="footerWrapper">
+		<div class="footerContainer">
+				<div class="footer">
+
+						<!-- navigation -->
+						<nav class="footer__nav">
+
+								<!-- link -->
+								<button class="footer__nav-link" data-nav-button="main">
+										<svg class="footer__nav-link-svg" width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M11.5 11.8941C12.0978 11.5482 12.5 10.9019 12.5 10.1616C12.5 9.05705 11.6046 8.16162 10.5 8.16162C9.39543 8.16162 8.5 9.05705 8.5 10.1616C8.5 10.9019 8.9022 11.5482 9.5 11.8941V14.6616C9.5 15.2139 9.94772 15.6616 10.5 15.6616C11.0523 15.6616 11.5 15.2139 11.5 14.6616L11.5 11.8941Z" fill="#8A8A8E"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M9.96012 0.798251C10.311 0.684437 10.689 0.684437 11.0399 0.798251L19.2899 3.47393C20.0108 3.70773 20.5 4.3787 20.5 5.13783V10.1616C20.5 16.3509 16.7292 20.8665 11.099 22.9909C10.7134 23.1365 10.2866 23.1365 9.901 22.9909C4.2708 20.8665 0.500005 16.3509 0.5 10.1616V5.13755C0.5 4.37817 0.989472 3.70765 1.71012 3.47393L9.96012 0.798251ZM10.5771 2.22508C10.527 2.20883 10.473 2.20883 10.4229 2.22508L2.17287 4.90076C2.06895 4.93446 2 5.03009 2 5.13755L2 10.1616C2 15.623 5.28075 19.6444 10.4305 21.5875C10.4749 21.6043 10.5251 21.6043 10.5695 21.5875C15.7193 19.6444 19 15.623 19 10.1616V5.13783C19 5.03012 18.9308 4.93439 18.8271 4.90076L10.5771 2.22508Z" fill="#8A8A8E"/>
+										</svg>
+
+										<span class="footer__nav-link-text">
+												Главная
+										</span>
+								</button>
+
+								<!-- link -->
+								<button class="footer__nav-link" data-nav-button="subscribe">
+										<svg class="footer__nav-link-svg" width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M15.4165 11.0996C15.0023 11.0996 14.6665 11.4354 14.6665 11.8496C14.6665 12.2638 15.0023 12.5996 15.4165 12.5996H18.9165C19.3307 12.5996 19.6665 12.2638 19.6665 11.8496C19.6665 11.4354 19.3307 11.0996 18.9165 11.0996H15.4165Z" fill="#8A8A8E"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1.9165 0.0996094C0.950006 0.0996094 0.166504 0.883111 0.166504 1.84961V16.3496C0.166504 17.3161 0.950006 18.0996 1.9165 18.0996H22.4165C23.383 18.0996 24.1665 17.3161 24.1665 16.3496V1.84961C24.1665 0.883111 23.383 0.0996094 22.4165 0.0996094H1.9165ZM1.6665 1.84961C1.6665 1.71154 1.77843 1.59961 1.9165 1.59961H22.4165C22.5546 1.59961 22.6665 1.71154 22.6665 1.84961V5.59961H1.6665V1.84961ZM1.6665 7.09961V16.3496C1.6665 16.4877 1.77843 16.5996 1.9165 16.5996H22.4165C22.5546 16.5996 22.6665 16.4877 22.6665 16.3496V7.09961H1.6665Z" fill="#8A8A8E"/>
+										</svg>
+
+
+										<span class="footer__nav-link-text">
+												Подписка
+										</span>
+								</button>
+
+								<!-- link -->
+								<button class="footer__nav-link" data-nav-button="history">
+										<svg class="footer__nav-link-svg" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M11.8319 1.59961C8.01474 1.59961 4.72177 3.8503 3.21095 7.09961H5.5835C5.99771 7.09961 6.3335 7.4354 6.3335 7.84961C6.3335 8.26382 5.99771 8.59961 5.5835 8.59961H1.8335C1.28121 8.59961 0.833496 8.15189 0.833496 7.59961V3.84961C0.833496 3.4354 1.16928 3.09961 1.5835 3.09961C1.99771 3.09961 2.3335 3.4354 2.3335 3.84961V5.54614C4.24263 2.28869 7.78095 0.0996094 11.8319 0.0996094C17.9078 0.0996094 22.8335 5.02437 22.8335 11.0996C22.8335 17.1749 17.9078 22.0996 11.8319 22.0996C5.84788 22.0996 0.979709 17.3228 0.833726 11.3743C0.823564 10.9602 1.15101 10.6162 1.5651 10.6061C1.97919 10.5959 2.32311 10.9234 2.33327 11.3375C2.45933 16.4739 6.66377 20.5996 11.8319 20.5996C17.0796 20.5996 21.3335 16.3462 21.3335 11.0996C21.3335 5.85301 17.0796 1.59961 11.8319 1.59961Z" fill="#8A8A8E"/>
+												<path d="M12.3335 6.34961C12.3335 5.9354 11.9977 5.59961 11.5835 5.59961C11.1693 5.59961 10.8335 5.9354 10.8335 6.34961V11.8496C10.8335 12.1188 10.9777 12.3673 11.2114 12.5008L14.7114 14.5008C15.071 14.7063 15.5292 14.5814 15.7347 14.2217C15.9402 13.8621 15.8152 13.4039 15.4556 13.1984L12.3335 11.4144V6.34961Z" fill="#8A8A8E"/>
+										</svg>
+
+
+										<span class="footer__nav-link-text">
+												История
+										</span>
+								</button>
+
+								<!-- link -->
+								<button class="footer__nav-link" data-nav-button="help">
+										<svg class="footer__nav-link-svg" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.2804 2.75252C15.8176 1.21531 18.3099 1.21531 19.8471 2.75252C21.3843 4.28974 21.3843 6.78206 19.8471 8.31928L16.2197 11.9467C14.6825 13.4839 12.1902 13.4839 10.6529 11.9467C10.5399 11.8337 10.4354 11.7158 10.3394 11.5937C10.0831 11.2682 9.61161 11.2121 9.28613 11.4683C8.96066 11.7245 8.90451 12.196 9.16071 12.5215C9.29339 12.6901 9.43727 12.8523 9.59228 13.0074C11.7153 15.1304 15.1574 15.1304 17.2804 13.0074L20.9078 9.37994C23.0308 7.25694 23.0308 3.81487 20.9078 1.69186C18.7848 -0.431141 15.3427 -0.431142 13.2197 1.69186L10.2197 4.6919C9.92677 4.98479 9.92677 5.45967 10.2197 5.75256C10.5126 6.04545 10.9874 6.04545 11.2803 5.75256L14.2804 2.75252Z" fill="#8A8A8E"/>
+												<path d="M6.78033 10.2525C8.31755 8.71531 10.8099 8.71531 12.3471 10.2525C12.4601 10.3656 12.5647 10.4835 12.6607 10.6055C12.9169 10.9309 13.3884 10.9871 13.7139 10.7309C14.0394 10.4747 14.0955 10.0031 13.8393 9.67766C13.7066 9.50906 13.5627 9.34681 13.4077 9.19186C11.2847 7.06886 7.84267 7.06886 5.71967 9.19186L2.09225 12.8193C-0.030751 14.9423 -0.030751 18.3844 2.09225 20.5074C4.21526 22.6304 7.65733 22.6304 9.78033 20.5074L12.7803 17.5074C13.0732 17.2145 13.0732 16.7396 12.7803 16.4467C12.4874 16.1538 12.0126 16.1538 11.7197 16.4467L8.71967 19.4467C7.18245 20.9839 4.69013 20.9839 3.15291 19.4467C1.6157 17.9095 1.6157 15.4172 3.15291 13.8799L6.78033 10.2525Z" fill="#8A8A8E"/>
+										</svg>
+
+
+										<span class="footer__nav-link-text">
+												Помощь
+										</span>
+								</button>
+
+						</nav>
+				</div>
+		</div>
+</footer>
+
+<!-- jQuery CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- SlickSlider CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Global script -->
+<script src="assets/js/index.js"></script>
+
+<!-- Pages -->
+<script src="pages/main/main.js"></script>
+
+<!-- Component scripts -->
+<script src="components/footer/footer.js"></script>
+
+
+</body>
+</html>

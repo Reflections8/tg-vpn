@@ -1,0 +1,18 @@
+@import "./vpn/vpn.css";
+
+.popupWrapper {
+  position: fixed;
+  transition: all .2s ease-in-out;
+  opacity: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.popupWrapper--Hidden {
+  opacity: 0;
+  pointer-events: none;
+}
